@@ -3,9 +3,9 @@ import pandas as pd
 
 df = pd.DataFrame(
     [
-       {"command": "st.selectbox", "rating": 4, "is_widget": True},
-       {"command": "st.balloons", "rating": 5, "is_widget": False},
-       {"command": "st.time_input", "rating": 3, "is_widget": True},
+       {"command": "st.selectbox", "rating": 4, "is_widget": True, "desc": "bla"},
+       {"command": "st.balloons", "rating": 5, "is_widget": False, "desc": "bla"},
+       {"command": "st.time_input", "rating": 3, "is_widget": True, "desc": "bla"},
    ]
 )
 edited_df = st.data_editor(df, num_rows="dynamic")
